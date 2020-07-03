@@ -1,0 +1,17 @@
+<% include partials/header %>
+<h1>Registration Form</h1>
+
+<!-- naming the post route of the name same as the get route-->
+<form action="/register" method="POST">
+   <label for="username">Name:</label><br>
+    <input type="text" name="username" placeholder="username"><br><br>
+     <label for="username">Password:</label><br>
+    <input type="password" name="password" placeholder="password"><br><br>
+    <button>Submit</button>
+</form>
+
+<br>
+<li><button style="width:100px;height:25px"><a href="/register">Sign Up</a></button></li><br>
+<li><button style="width:100px;height:25px"><a href="/login">Login</a></button></li><br>
+<li><button style="width:100px;height:25px"><a href="/logout">Logout</a></button></li>
+<% include partials/footer %>

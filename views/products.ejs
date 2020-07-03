@@ -1,0 +1,62 @@
+<% include partials/header %>
+
+<p id="demo"></p>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Buy</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>RedMi Phone</td>
+            <td>10000</td>
+            <td>
+                <button onClick="randomValue()">Buy</button>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Dell Laptop</td>
+            <td>58000</td>
+            <td>
+                <button onClick="randomValue()">Buy</button>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>LG Refrigerator</td>
+            <td>23000</td>
+            <td>
+                <button onClick="randomValue()">Buy</button>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Apple Ipad</td>
+            <td>48000</td>
+            <td>
+                <button onClick="randomValue()">Buy</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<br><br>
+
+<button style="width:250px;height:50px"><a href="/apply">Apply for Reimbursement</a></button>
+
+<script>
+    var show=document.getElementById("demo");
+    function randomValue()
+    {
+        var random=Math.random().toString(36).slice(2);
+        show.innerHTML="Your transcation id is:"+" "+random;
+    }
+</script>
+<% include partials/footer %>

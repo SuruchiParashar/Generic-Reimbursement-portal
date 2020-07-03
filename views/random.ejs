@@ -1,0 +1,11 @@
+<p id="demo"></p>
+
+
+<script>
+    var show=document.showElementById("demo");
+    function randomValue()
+    {
+        var random=Math.random().toString(36).slice(2);
+        show.innerHTML("Your transcation id is:"+" "+random);
+    }
+</script>
